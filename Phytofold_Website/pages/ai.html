@@ -1,0 +1,324 @@
+<!-- Hero -->
+<section style="background:#1E3D0E; padding:64px 32px 80px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div style="display:inline-block; background:rgba(200,148,10,0.9); color:#1E3D0E; font-size:0.6875rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; padding:6px 14px; border-radius:4px; margin-bottom:20px;">AI Technology</div>
+    <h1 style="font-size:clamp(2rem,4.5vw,3.25rem); color:white; font-weight:900; line-height:1.08; letter-spacing:-0.03em; margin-bottom:18px; max-width:680px;">AI Protein Design Technology</h1>
+    <p style="color:rgba(255,255,255,0.65); font-size:1.125rem; line-height:1.75; max-width:760px;">Understanding how protein structure and AI-driven design tools enable the rapid development of novel biopesticide candidates.</p>
+  </div>
+</section>
+
+<!-- Protein Basics -->
+<section style="background:white; padding:80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <span class="chip">Foundations</span>
+    <div class="divider" style="margin-bottom:24px;"></div>
+    <h2 style="font-size:clamp(1.75rem,3vw,2.375rem); font-weight:700; color:#1E3D0E; letter-spacing:-0.03em; margin-bottom:12px; line-height:1.2;">Protein Basics</h2>
+    <p style="font-size:1rem; line-height:1.8; color:rgba(26,40,18,0.8); margin-bottom:36px;">Protein structure exists across several scales — from the linear primary sequence through to the quaternary assembly. Click each level to explore further.</p>
+
+    <div style="display:flex; flex-direction:column; gap:8px;">
+
+      <!-- Primary -->
+      <div class="impact-item">
+        <button class="impact-trigger" onclick="toggleImpact('ps-primary')" aria-expanded="false">
+          <div style="flex:1;">
+            <div style="font-size:1.0625rem; font-weight:700; color:#1E3D0E; line-height:1.3;">Primary Structure</div>
+            <div style="font-size:0.8125rem; color:rgba(26,40,18,0.48); margin-top:3px;">Linear sequence of amino acids</div>
+          </div>
+          <svg id="ps-primary-arrow" class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="ps-primary" class="expandable">
+          <div style="padding:8px 28px 32px;">
+            <div style="display:grid; grid-template-columns:260px 1fr; gap:36px; align-items:start; margin-top:8px;">
+              <img src="content_overall/content_4%28AI-tech%29/content%203-%20primary%20structure%20.png" alt="Primary protein structure" class="img-card" style="width:100%; height:auto; display:block;">
+              <div>
+                <p style="font-size:0.9375rem; line-height:1.8; color:rgba(26,40,18,0.82); margin-bottom:14px;">The primary structure is the <strong style="color:#1E3D0E;">linear sequence of amino acids</strong> held together by peptide bonds.</p>
+                <p style="font-size:0.9375rem; line-height:1.8; color:rgba(26,40,18,0.82);">It underpins all protein structures and interactions — as it determines how the protein will fold, the primary structure has cascading effects on every higher level of organisation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary -->
+      <div class="impact-item">
+        <button class="impact-trigger" onclick="toggleImpact('ps-secondary')" aria-expanded="false">
+          <div style="flex:1;">
+            <div style="font-size:1.0625rem; font-weight:700; color:#1E3D0E; line-height:1.3;">Secondary Structure</div>
+            <div style="font-size:0.8125rem; color:rgba(26,40,18,0.48); margin-top:3px;">Alpha helices, beta sheets and loops</div>
+          </div>
+          <svg id="ps-secondary-arrow" class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="ps-secondary" class="expandable">
+          <div style="padding:8px 28px 32px;">
+            <div style="display:grid; grid-template-columns:260px 1fr; gap:36px; align-items:start; margin-top:8px;">
+              <img src="content_overall/content_4%28AI-tech%29/content%203-%20secondary%20structure%20.jpg" alt="Secondary protein structure" class="img-card" style="width:100%; height:auto; display:block;">
+              <div>
+                <p style="font-size:0.9375rem; line-height:1.8; color:rgba(26,40,18,0.82); margin-bottom:18px;">The primary sequence folds and forms hydrogen bonds that dictate the arrangement of the polypeptide backbone, with van der Waals and hydrophobic interactions supporting stability.</p>
+                <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:18px;">
+                  <div style="background:#F7F5EB; border-radius:8px; padding:12px 14px; border-left:3px solid #C8940A;">
+                    <strong style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:#1E3D0E; display:block; margin-bottom:4px;">Hydrogen Bonding</strong>
+                    <span style="font-size:0.875rem; line-height:1.65; color:rgba(26,40,18,0.8);">Occurs between the amino and carboxyl groups of the backbone</span>
+                  </div>
+                  <div style="background:#F7F5EB; border-radius:8px; padding:12px 14px; border-left:3px solid #C8940A;">
+                    <strong style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:#1E3D0E; display:block; margin-bottom:4px;">Van der Waals</strong>
+                    <span style="font-size:0.875rem; line-height:1.65; color:rgba(26,40,18,0.8);">Weak forces of attraction between closely packed atoms</span>
+                  </div>
+                  <div style="background:#F7F5EB; border-radius:8px; padding:12px 14px; border-left:3px solid #C8940A;">
+                    <strong style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:#1E3D0E; display:block; margin-bottom:4px;">Hydrophobic Interactions</strong>
+                    <span style="font-size:0.875rem; line-height:1.65; color:rgba(26,40,18,0.8);">Hydrophobic side chains orient inward to avoid water; hydrophilic side chains act conversely</span>
+                  </div>
+                </div>
+                <p style="font-size:0.875rem; font-weight:600; color:#1E3D0E; margin-bottom:8px;">Main structural motifs:</p>
+                <ul class="bullet-list" style="font-size:0.875rem;">
+                  <li>Alpha helix</li>
+                  <li>Beta-pleated sheet</li>
+                  <li>Turns and loops</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tertiary -->
+      <div class="impact-item">
+        <button class="impact-trigger" onclick="toggleImpact('ps-tertiary')" aria-expanded="false">
+          <div style="flex:1;">
+            <div style="font-size:1.0625rem; font-weight:700; color:#1E3D0E; line-height:1.3;">Tertiary Structure</div>
+            <div style="font-size:0.8125rem; color:rgba(26,40,18,0.48); margin-top:3px;">Final 3D shape that determines function</div>
+          </div>
+          <svg id="ps-tertiary-arrow" class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="ps-tertiary" class="expandable">
+          <div style="padding:8px 28px 32px;">
+            <div style="display:grid; grid-template-columns:260px 1fr; gap:36px; align-items:start; margin-top:8px;">
+              <img src="content_overall/content_4%28AI-tech%29/content%203-%20tertiary%20structure%20.png" alt="Tertiary protein structure" class="img-card" style="width:100%; height:auto; display:block;">
+              <div>
+                <p style="font-size:0.9375rem; line-height:1.8; color:rgba(26,40,18,0.82); margin-bottom:18px;">The secondary structure folds further to form the <strong style="color:#1E3D0E;">final 3D structure</strong> that determines the protein's function. This involves hydrogen bonds, van der Waals and hydrophobic interactions, as well as ionic bonds and disulfide bonds.</p>
+                <div style="display:flex; flex-direction:column; gap:10px;">
+                  <div style="background:#F7F5EB; border-radius:8px; padding:12px 14px; border-left:3px solid #2D5E1A;">
+                    <strong style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:#1E3D0E; display:block; margin-bottom:4px;">Ionic Bonds</strong>
+                    <span style="font-size:0.875rem; line-height:1.65; color:rgba(26,40,18,0.8);">Attraction between oppositely charged amino acid side chains</span>
+                  </div>
+                  <div style="background:#F7F5EB; border-radius:8px; padding:12px 14px; border-left:3px solid #2D5E1A;">
+                    <strong style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; color:#1E3D0E; display:block; margin-bottom:4px;">Disulfide Bonds</strong>
+                    <span style="font-size:0.875rem; line-height:1.65; color:rgba(26,40,18,0.8);">Covalent links between sulphur atoms of two cysteine amino acids</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quaternary -->
+      <div class="impact-item">
+        <button class="impact-trigger" onclick="toggleImpact('ps-quaternary')" aria-expanded="false">
+          <div style="flex:1;">
+            <div style="font-size:1.0625rem; font-weight:700; color:#1E3D0E; line-height:1.3;">Quaternary Structure</div>
+            <div style="font-size:0.8125rem; color:rgba(26,40,18,0.48); margin-top:3px;">Multiple polypeptide chains as one functional unit</div>
+          </div>
+          <svg id="ps-quaternary-arrow" class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="ps-quaternary" class="expandable">
+          <div style="padding:8px 28px 32px;">
+            <div style="display:grid; grid-template-columns:260px 1fr; gap:36px; align-items:start; margin-top:8px;">
+              <img src="content_overall/content_4%28AI-tech%29/content%203-%20quaternary%20structure%20.png" alt="Quaternary protein structure" class="img-card" style="width:100%; height:auto; display:block;">
+              <div>
+                <p style="font-size:0.9375rem; line-height:1.8; color:rgba(26,40,18,0.82);">The structure formed by the interaction of <strong style="color:#1E3D0E;">two or more polypeptide chains</strong> in their tertiary structure, that together act as one functional unit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Protein Logic -->
+<section style="background:#F7F5EB; padding:80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <span class="chip">Fundamentals</span>
+    <div class="divider" style="margin-bottom:24px;"></div>
+    <h2 style="font-size:clamp(1.75rem,3vw,2.375rem); font-weight:700; color:#1E3D0E; letter-spacing:-0.03em; margin-bottom:24px; line-height:1.2;">Protein Logic Underpinning AI Technologies</h2>
+    <p style="font-size:1.0625rem; line-height:1.8; color:rgba(26,40,18,0.82); margin-bottom:20px;">Protein-protein interactions (PPIs) are determined by the complexity of structural protein features and are essential to all biological processes, such as enzymatic chemical reactions. The strength of a PPI can be scored with <strong style="color:#1E3D0E;">binding affinity</strong> — which refers to how well a binder (substrate) binds to a receptor.</p>
+    <div class="callout" style="margin-bottom:24px;">
+      <p style="font-size:0.9375rem; line-height:1.75; color:rgba(26,40,18,0.82);">If the primary protein structure is modified it has <strong style="color:#1E3D0E;">cascading effects</strong> — from altering protein folding to the final tertiary structure and how it interacts. This is the concept that underpins all protein design technologies.</p>
+    </div>
+    <p style="font-size:1.0625rem; line-height:1.8; color:rgba(26,40,18,0.82);">AI protein design can generate potential biopesticide candidates much faster than traditional methods of crystallography, by altering protein properties and thereby their interactions.</p>
+  </div>
+</section>
+
+<!-- Key AI Technologies -->
+<section style="background:white; padding:80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <span class="chip">Technologies</span>
+    <div class="divider" style="margin-bottom:24px;"></div>
+    <h2 style="font-size:clamp(1.75rem,3vw,2.375rem); font-weight:700; color:#1E3D0E; letter-spacing:-0.03em; margin-bottom:12px; line-height:1.2;">Key AI Protein Design Technologies</h2>
+    <p style="font-size:1rem; line-height:1.8; color:rgba(26,40,18,0.8); margin-bottom:36px;">A basic overview of how each tool works.</p>
+
+    <div style="display:flex; flex-direction:column; gap:8px;">
+
+      <!-- Rosetta -->
+      <div class="impact-item">
+        <button class="impact-trigger" onclick="toggleImpact('tech-rosetta')" aria-expanded="false">
+          <div style="flex:1;">
+            <div style="font-size:1.0625rem; font-weight:700; color:#1E3D0E; line-height:1.3;">Rosetta</div>
+            <div style="font-size:0.8125rem; color:rgba(26,40,18,0.48); margin-top:3px;">Physics-based energy minimisation</div>
+          </div>
+          <svg id="tech-rosetta-arrow" class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="tech-rosetta" class="expandable">
+          <div style="padding:4px 28px 24px;">
+            <p style="font-size:0.9375rem; line-height:1.75; color:rgba(26,40,18,0.75); margin-bottom:10px;">A physics-based diffusion model that relies on energy calculations to produce structures with the lowest energy state.</p>
+            <p style="font-size:0.9375rem; line-height:1.75; color:rgba(26,40,18,0.75);">Based upon <strong style="color:#1E3D0E;">dG/dSASA</strong> — the change in free energy per change in solvent-accessible surface area.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AlphaFold 2 -->
+      <div class="impact-item">
+        <button class="impact-trigger" onclick="toggleImpact('tech-af2')" aria-expanded="false">
+          <div style="flex:1;">
+            <div style="font-size:1.0625rem; font-weight:700; color:#1E3D0E; line-height:1.3;">AlphaFold 2 (AF2)</div>
+            <div style="font-size:0.8125rem; color:rgba(26,40,18,0.48); margin-top:3px;">Predicts tertiary structure from amino acid sequence</div>
+          </div>
+          <svg id="tech-af2-arrow" class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="tech-af2" class="expandable">
+          <div style="padding:4px 28px 24px;">
+            <p style="font-size:0.9375rem; line-height:1.75; color:rgba(26,40,18,0.75); margin-bottom:10px;"><strong style="color:#1E3D0E;">Function:</strong> Predicts the tertiary structure of a protein (how it folds) from the primary amino acid sequence.</p>
+            <p style="font-size:0.9375rem; line-height:1.75; color:rgba(26,40,18,0.75);">Allows sequences to be validated before experimentation and is substantially quicker than traditional crystallographic methods.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BindCraft -->
+      <div class="impact-item">
+        <button class="impact-trigger" onclick="toggleImpact('tech-bindcraft')" aria-expanded="false">
+          <div style="flex:1;">
+            <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+              <div style="font-size:1.0625rem; font-weight:700; color:#1E3D0E; line-height:1.3;">BindCraft</div>
+              <span style="background:rgba(200,148,10,0.14); color:#96700A; font-size:0.6875rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:3px 9px; border-radius:4px;">What We Use</span>
+            </div>
+            <div style="font-size:0.8125rem; color:rgba(26,40,18,0.48); margin-top:3px;">AF2-powered de novo binder design</div>
+          </div>
+          <svg id="tech-bindcraft-arrow" class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D5E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="tech-bindcraft" class="expandable">
+          <div style="padding:8px 28px 36px;">
+
+            <p style="font-size:0.9375rem; line-height:1.75; color:rgba(26,40,18,0.82); margin-bottom:28px;"><strong style="color:#1E3D0E;">Function:</strong> Uses AF2 to design binder proteins that will bind to the binding site of a selected/specified receptor.</p>
+
+            <!-- How it works -->
+            <h3 style="font-size:1rem; font-weight:700; color:#1E3D0E; margin-bottom:16px; letter-spacing:-0.01em;">How It Works — Hover Each Stage</h3>
+
+            <div style="position:relative; display:block;">
+              <img src="content_overall/content_4%28AI-tech%29/content%203-%20bindcraft%20.png" alt="BindCraft workflow diagram showing three pipeline stages" style="width:100%; height:auto; display:block; border-radius:10px; box-shadow:0 4px 20px rgba(30,61,14,0.12);">
+              <!-- Stage 1 hotspot — left third -->
+              <div class="bc-hotspot" onmouseenter="showBCStage(1)" onmouseleave="hideBCStage()" style="top:15%; left:2%; width:29%; height:70%;"></div>
+              <!-- Stage 2 hotspot — middle third -->
+              <div class="bc-hotspot" onmouseenter="showBCStage(2)" onmouseleave="hideBCStage()" style="top:15%; left:35%; width:29%; height:70%;"></div>
+              <!-- Stage 3 hotspot — right third -->
+              <div class="bc-hotspot" onmouseenter="showBCStage(3)" onmouseleave="hideBCStage()" style="top:15%; left:68%; width:29%; height:70%;"></div>
+            </div>
+
+            <!-- Default / stage info panels -->
+            <div id="bc-default" style="margin-top:14px; background:#F7F5EB; border-radius:10px; padding:14px 20px; border:1px solid rgba(45,94,26,0.1); text-align:center; color:rgba(26,40,18,0.45); font-size:0.875rem; font-style:italic;">Hover over a stage in the diagram above to see details</div>
+
+            <div id="bc-stage-1" class="bc-stage-panel">
+              <div style="font-size:0.6875rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#96700A; margin-bottom:6px;">Stage 1</div>
+              <h4 style="font-size:1rem; font-weight:700; color:#1E3D0E; margin-bottom:10px; letter-spacing:-0.01em;">Backpropagation from Binding Site Shape</h4>
+              <p style="font-size:0.9rem; line-height:1.75; color:rgba(26,40,18,0.82);">Molecules are backpropagated from the <strong style="color:#1E3D0E;">shape of the binding site</strong> rather than from the primary amino acid sequence. This allows BindCraft to generate binder structures that are geometrically complementary to the target receptor before any sequence is assigned.</p>
+            </div>
+
+            <div id="bc-stage-2" class="bc-stage-panel">
+              <div style="font-size:0.6875rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#96700A; margin-bottom:6px;">Stage 2</div>
+              <h4 style="font-size:1rem; font-weight:700; color:#1E3D0E; margin-bottom:10px; letter-spacing:-0.01em;">Sequence Redesign via ProteinMPNN</h4>
+              <p style="font-size:0.9rem; line-height:1.75; color:rgba(26,40,18,0.82); margin-bottom:14px;">At each iteration the binder sequence is redesigned using an <strong style="color:#1E3D0E;">AF2 monomer model (ProteinMPNN)</strong>. This stage focuses on residues not interacting with the target, making the designed protein more realistic and realisable in synthesis.</p>
+              <p style="font-size:0.8125rem; font-weight:600; color:#1E3D0E; margin-bottom:8px;">Properties optimised at this stage:</p>
+              <ul class="bullet-list" style="font-size:0.875rem;">
+                <li>Interface and binder pLDDT</li>
+                <li>Interface PTM loss</li>
+                <li>Inter and intra-molecular pAE (amount of contacts)</li>
+                <li>Radius of gyration loss for globular proteins</li>
+                <li>Negative helicity loss (alpha helices are prioritised)</li>
+              </ul>
+            </div>
+
+            <div id="bc-stage-3" class="bc-stage-panel">
+              <div style="font-size:0.6875rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#96700A; margin-bottom:6px;">Stage 3</div>
+              <h4 style="font-size:1rem; font-weight:700; color:#1E3D0E; margin-bottom:10px; letter-spacing:-0.01em;">Energy Cost of Unsaturated Hydrogen Bonds</h4>
+              <p style="font-size:0.9rem; line-height:1.75; color:rgba(26,40,18,0.82);">Considers the <strong style="color:#1E3D0E;">energy cost of unsaturated hydrogen bonds</strong> that are overlooked by AF2. This additional refinement step improves the physical plausibility of the designed binder and increases the likelihood of successful experimental validation.</p>
+            </div>
+
+            <!-- Pros / Cons table -->
+            <h3 style="font-size:1rem; font-weight:700; color:#1E3D0E; margin-top:36px; margin-bottom:16px; letter-spacing:-0.01em;">Pros &amp; Cons</h3>
+            <table class="pros-cons-table">
+              <thead>
+                <tr>
+                  <th style="width:50%; border-radius:8px 0 0 0;">Advantages</th>
+                  <th style="width:50%; border-radius:0 8px 0 0;">Disadvantages</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="pro">
+                    <div style="display:flex; gap:9px; align-items:flex-start;">
+                      <span style="color:#2D5E1A; font-weight:700; flex-shrink:0; margin-top:1px;">✓</span>
+                      <span>Average success rate is <strong style="color:#1E3D0E;">46.3%</strong> — higher than physical alternatives</span>
+                    </div>
+                  </td>
+                  <td class="con">
+                    <div style="display:flex; gap:9px; align-items:flex-start;">
+                      <span style="color:#C8940A; font-weight:700; flex-shrink:0; margin-top:1px;">✗</span>
+                      <span>Backpropagation through AF2 is <strong style="color:#1E3D0E;">GPU-intensive</strong>, which is expensive</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pro">
+                    <div style="display:flex; gap:9px; align-items:flex-start;">
+                      <span style="color:#2D5E1A; font-weight:700; flex-shrink:0; margin-top:1px;">✓</span>
+                      <span>Enables screening of <strong style="color:#1E3D0E;">fewer binders</strong> experimentally — more cost-effective and faster</span>
+                    </div>
+                  </td>
+                  <td class="con">
+                    <div style="display:flex; gap:9px; align-items:flex-start;">
+                      <span style="color:#C8940A; font-weight:700; flex-shrink:0; margin-top:1px;">✗</span>
+                      <span>Filtering criteria may <strong style="color:#1E3D0E;">exclude potentially good binders</strong></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pro" style="border-radius:0 0 0 8px;">
+                    <div style="display:flex; gap:9px; align-items:flex-start;">
+                      <span style="color:#2D5E1A; font-weight:700; flex-shrink:0; margin-top:1px;">✓</span>
+                      <span><strong style="color:#1E3D0E;">Robustness is prioritised</strong> at each step of the pipeline</span>
+                    </div>
+                  </td>
+                  <td class="con" style="border-radius:0 0 8px 0;">
+                    <div style="display:flex; gap:9px; align-items:flex-start;">
+                      <span style="color:#C8940A; font-weight:700; flex-shrink:0; margin-top:1px;">✗</span>
+                      <span>Insensitive to <strong style="color:#1E3D0E;">point mutations</strong> that affect PPI interfaces</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer style="background:#1C3B0D; border-top:1px solid rgba(255,255,255,0.06); padding:28px 32px;">
+  <div style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between;">
+    <div style="display:flex; align-items:center; gap:10px;"><img src="brand_assessts/logo.png" alt="Phyto Fold" style="height:32px; width:32px; object-fit:contain; opacity:0.7;"><span style="font-family:'Playfair Display',serif; color:rgba(255,255,255,0.45); font-size:0.9375rem;">Phyto Fold</span></div>
+    <p style="color:rgba(255,255,255,0.25); font-size:0.75rem;">© 2025 Phyto Fold. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,1 @@
+Our aims To develop AI-assisted protein design for biopesticide development targeting Cabbage Stem Flea Beetle to promote sustainable agricultural solutions and maintain Winter Oil Seed Rape yields in the UK. Proof of concept Firstly, obtain high affinity binding data for de-novo designed protein binder to receptor from computational assays.  

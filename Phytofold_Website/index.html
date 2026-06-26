@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phyto Fold</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav style="background:rgba(30,61,14,0.97); backdrop-filter:blur(12px); position:sticky; top:0; z-index:50; border-bottom:1px solid rgba(255,255,255,0.07);">
+  <div style="max-width:1280px; margin:0 auto; padding:12px 32px; display:flex; align-items:center; justify-content:space-between;">
+
+    <button onclick="navigate('home')" style="display:flex; align-items:center; gap:12px; background:none; border:none; cursor:pointer; padding:0;">
+      <div style="width:46px; height:46px; border-radius:50%; background:white; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <img src="brand_assessts/logo.png" alt="Phyto Fold" style="height:36px; width:36px; object-fit:contain;">
+      </div>
+      <span style="font-family:'Playfair Display',serif; color:white; font-size:1.25rem; font-weight:600; letter-spacing:-0.01em;">Phyto Fold</span>
+    </button>
+
+    <div style="display:flex; gap:28px; align-items:center;">
+
+      <div class="nav-group">
+        <button class="nav-group-trigger" onclick="toggleNav(this)">
+          Who Are We
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <button onclick="navigate('team');closeNavs()"     class="nav-dropdown-item" data-page="team">The Team</button>
+          <button onclick="navigate('sponsors');closeNavs()" class="nav-dropdown-item" data-page="sponsors">Sponsors</button>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-group-trigger" onclick="toggleNav(this)">
+          Background
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <button onclick="navigate('problem');closeNavs()"    class="nav-dropdown-item" data-page="problem">The Problem</button>
+          <button onclick="navigate('organisms');closeNavs()"  class="nav-dropdown-item" data-page="organisms">Organisms</button>
+          <button onclick="navigate('csfb');closeNavs()"       class="nav-dropdown-item" data-page="csfb">CSFB Pest Action</button>
+          <button onclick="navigate('climate');closeNavs()"    class="nav-dropdown-item" data-page="climate">Impact of Climate Change</button>
+          <button onclick="navigate('approaches');closeNavs()" class="nav-dropdown-item" data-page="approaches">New Approaches</button>
+          <button onclick="navigate('ai');closeNavs()"         class="nav-dropdown-item" data-page="ai">AI Technology</button>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-group-trigger" onclick="toggleNav(this)">
+          Our Solution
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <button onclick="navigate('methodology');closeNavs()" class="nav-dropdown-item" data-page="methodology">Methodology</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════ PAGE CONTENT (loaded dynamically) ═══════════ -->
+<div id="app"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
